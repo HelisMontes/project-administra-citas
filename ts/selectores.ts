@@ -8,7 +8,7 @@ export const attribute:any = {
 }; Object.freeze(attribute);
 
 export const dataForm:any ={
-    nueva_cita: document.querySelector('#nueva'),
+    nueva_cita: document.querySelector('#nueva-cita'),
     citas: document.querySelector('#citas'),
     contenido: document.querySelector('#contenido'),
     agregarCita: document.querySelector('.agregar-cita') 

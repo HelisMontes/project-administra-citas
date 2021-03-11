@@ -9,7 +9,7 @@ export const attribute = {
 }; Object.freeze(attribute);
 
 export const dataForm = {
-    nueva_cita: document.querySelector('#nueva'),
+    nueva_cita: document.querySelector('#nueva-cita'),
     citas: document.querySelector('#citas'),
     contenido: document.querySelector('#contenido'),
     agregarCita: document.querySelector('.agregar-cita')
