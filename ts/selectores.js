@@ -1,4 +1,5 @@
-export const attribute:any = {
+"use strict";
+export const attribute = {
     mascota: document.querySelector('#mascota'),
     propietario: document.querySelector('#propietario'),
     telefono: document.querySelector('#telefono'),
@@ -7,9 +8,9 @@ export const attribute:any = {
     sintomas: document.querySelector('#sintomas')
 }; Object.freeze(attribute);
 
-export const dataForm:any ={
+export const dataForm = {
     nueva_cita: document.querySelector('#nueva'),
     citas: document.querySelector('#citas'),
     contenido: document.querySelector('#contenido'),
-    agregarCita: document.querySelector('.agregar-cita') 
+    agregarCita: document.querySelector('.agregar-cita')
 }; Object.freeze(dataForm);
