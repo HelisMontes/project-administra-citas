@@ -60,6 +60,7 @@ const dataActualizada = (id) => {
     classCitas.updateCitas(dataCitas);
     const { citas_array } = classCitas;
     classUI.printHTML_Message('Cita Actualizada correctamente');
+    console.log(citas_array)
     classUI.printHTML_Citas(citas_array);
     classUI.add_DeleteBtn('submit');
 };

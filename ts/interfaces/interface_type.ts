@@ -11,7 +11,7 @@ interface interfaceCitas{
     citas_array:formAttribute[];
     addCitas(cita:formAttribute):void;
     removeCitas(id:number):void;
-    updateCitas(cita:formAttribute);
+    updateCitas(citaUpdated:formAttribute);
 }
 
 interface interfaceUI{

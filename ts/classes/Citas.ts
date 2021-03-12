@@ -13,19 +13,7 @@ export class Citas implements interfaceCitas{
       this.citas_array = this.citas_array.filter( cita => cita.id !== id);
     };
 
-    public updateCitas(cita:formAttribute):void{
-      this.citas_array.map(citas =>{
-        if(citas.id === cita.id){
-          citas.mascota=cita.mascota;
-          citas.propietario=cita.propietario;
-          citas.telefono=cita.telefono;
-          citas.fecha=cita.fecha;
-          citas.hora=cita.hora;
-          citas.sintomas=cita.sintomas;
-          return citas;
-        }else{
-          return citas;
-        };
-      });
+    public updateCitas(citaUpdated:formAttribute):void{
+      this.citas_array = this.citas_array.map( citas => citas.id === citaUpdated.id ? citaUpdated : citas);
     }
 };
