@@ -9,7 +9,9 @@ type formAttribute = {
 };
 interface interfaceCitas{
     citas_array:formAttribute[];
-    addCitas(attributes:formAttribute):void;
+    addCitas(cita:formAttribute):void;
+    removeCitas(id:number):void;
+    updateCitas(cita:formAttribute);
 }
 
 interface interfaceUI{
@@ -17,6 +19,7 @@ interface interfaceUI{
     printHTML_Citas(citas:formAttribute[]):void;
     insertParrafo(data:string | number, nameSpan:string, divCita:any):void;
     limpiarHTML():void;
+    add_DeleteBtn(type:string, name:string, id?:number);
 }
 
 export{ formAttribute, interfaceCitas, interfaceUI }
